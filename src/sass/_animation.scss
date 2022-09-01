@@ -1,0 +1,39 @@
+@keyframes animation-open {
+	from {
+		transform: translatey(-10px);
+		opacity: 0;
+	}
+	to {
+		transform: translatey(0);
+		opacity: 1;
+		z-index: 2;
+	}
+}
+@keyframes animation-close {
+	from {
+		transform: translatey(0);
+		opacity: 1;
+	}
+	to {
+		transform: translatey(-10px);
+		opacity: 0;
+		z-index: 0;
+	}
+}
+
+@keyframes left-slide {
+	from {
+		transform: translatex(-600px);
+	}
+	to {
+		transform: translatex(0);
+	}
+}
+@keyframes right-slide {
+	from {
+		left: 800px;
+	}
+	to {
+		left: 0px;
+	}
+}

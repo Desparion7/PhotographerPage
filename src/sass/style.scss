@@ -1,3 +1,4 @@
+@use 'animation';
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -8,11 +9,12 @@ body {
 	height: 100vh;
 	font-family: 'Montserrat', sans-serif;
 	background: linear-gradient(
-		45deg,
+		90deg,
 		rgb(239, 239, 219),
 		rgb(243, 243, 240) 50%
 	);
 	overflow-x: hidden;
+	background-color: red;
 }
 .nav-shadow {
 	display: flex;
@@ -130,7 +132,7 @@ body {
 	background-color: rgba(0, 0, 0, 0.35);
 	z-index: 1;
 }
-.arrow{
+.arrow {
 	position: absolute;
 	bottom: 0;
 	display: flex;
@@ -178,6 +180,7 @@ h2 {
 .section-body {
 	display: flex;
 	flex-direction: column;
+	transform: translatex(-400px);
 }
 .aboutme-text {
 	text-align: justify;
@@ -200,16 +203,22 @@ h2 {
 	border: none;
 	background-color: #dbcda2;
 	cursor: pointer;
+	transition: background-color 0.3s;
 }
 .btn:hover {
 	background-color: #b49538;
 }
 .aboutme-photo {
 	position: absolute;
-	margin-top: 1em;
+	height: 500px;
+	right: 0;
 	left: 0;
-	width: 100%;
-	border-radius: 5px;
+	overflow: hidden;
+
+	.aboutme-img {
+		position: absolute;
+		left: 800px;
+	}
 }
 h3 {
 	text-align: justify;
@@ -224,28 +233,13 @@ li {
 	line-height: 1.6;
 	margin: 0.5em 0;
 }
-@keyframes animation-open {
-	from {
-		transform: translatey(-10px);
-		opacity: 0;
-	}
-	to {
-		transform: translatey(0);
-		opacity: 1;
-		z-index: 2;
-	}
+.aboutme-animation-text {
+	animation: left-slide 1s forwards;
 }
-@keyframes animation-close {
-	from {
-		transform: translatey(0);
-		opacity: 1;
-	}
-	to {
-		transform: translatey(-10px);
-		opacity: 0;
-		z-index: 0;
-	}
+.aboutme-animation-photo {
+	animation: right-slide 1s forwards;
 }
+
 //MEDIA//////////////////////////////////////
 @media (min-width: 375px) {
 	.owner {
@@ -258,9 +252,6 @@ li {
 	}
 }
 @media (min-width: 768px) {
-	.aboutme-photo {
-		background-image: url(/dist/img/about_me_photo.jpg);
-	}
 }
 @media (min-width: 1024px) {
 	.owner {
@@ -295,26 +286,34 @@ li {
 	.quote {
 		font-size: 2em;
 	}
-	.aboutme-box {
-		display: flex;
-		justify-content: space-between;
-	}
-	.aboutme-photo {
-		position: relative;
-		margin-top: 0;
-		width: 50%;
-	}
+
 	.aboutme-text {
 		text-align: justify;
 		line-height: 1.6;
 		margin-bottom: 1em;
 	}
+	
 	.section-body {
 		justify-content: space-evenly;
 		align-items: center;
 		top: 0;
 		width: 50%;
 		margin-right: 2em;
+	}
+	.aboutme-box {
+		display: flex;
+		padding: 2em;
+	}
+	.aboutme-photo {
+		position: relative;
+		height: 500px;
+		.aboutme-img {
+			position: relative;
+			left: 800px;
+			width: 100%;
+			height: 100%;
+			border-radius: 5px;
+		}
 	}
 }
 @media (min-width: 1130px) {
