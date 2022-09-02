@@ -167,6 +167,8 @@ h1 {
 .aboutme {
 	margin: 2em;
 	overflow: hidden;
+	overflow-y: auto;
+	height: 100%;
 }
 h2 {
 	margin-top: -20px;
@@ -186,7 +188,7 @@ h2 {
 	line-height: 1.6;
 	margin-bottom: 1em;
 }
-.aboutme-btn {
+.btn-box {
 	display: flex;
 	justify-content: center;
 	margin: 1em 0;
@@ -209,7 +211,6 @@ h2 {
 }
 .aboutme-photo {
 	position: absolute;
-	height: 500px;
 	width: 100%;
 	left: 0;
 	overflow-x: hidden;
@@ -238,11 +239,48 @@ li {
 .aboutme-animation-photo {
 	animation: right-slide 1s forwards;
 }
+.portfolio {
+	margin-top: 14em;
+}
+h3 {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.couples-box {
+	display: flex;
+	flex-wrap: wrap;
+}
+.couple-box {
+	width: 50%;
+}
 
 //MEDIA//////////////////////////////////////
 @media (min-width: 375px) {
 	.owner {
 		font-size: 1.5em;
+	}
+	.portfolio {
+		margin-top: 16em;
+	}
+}
+@media (min-width: 414px) {
+	.portfolio {
+		margin-top: 18em;
+	}
+}
+@media (min-width: 415px) {
+	.aboutme-photo {
+		position: relative;
+		height: 100%;
+		.aboutme-img {
+			position: relative;
+			width: 100%;
+			border-radius: 5px;
+		}
+	}
+	.portfolio {
+		margin-top: 1em;
 	}
 }
 @media (min-width: 587px) {
@@ -250,9 +288,10 @@ li {
 		top: 32px;
 	}
 }
+
 @media (min-width: 768px) {
-	.section-body{
-		padding:0 6em;
+	.section-body {
+		padding: 0 6em;
 	}
 }
 
@@ -295,13 +334,11 @@ li {
 		line-height: 1.6;
 		margin-bottom: 1em;
 	}
-	.aboutme-photo {
-		position: relative;
-		height: 100%;
-		.aboutme-img {
-			position: relative;
-			width: 100%;
-			border-radius: 5px;
+	.portfolio-text {
+		padding: 0 6em;
+		p {
+			text-align: center;
+			line-height: 1.6;
 		}
 	}
 }

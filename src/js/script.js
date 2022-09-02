@@ -20,7 +20,7 @@ const animationAboutText = () => {
 };
 
 const animationAboutPhoto = () => {
-	if (!window.matchMedia('(max-width: 1024px)').matches) {
+	if (!window.matchMedia('(max-width: 768px)').matches) {
 		if (window.scrollY >= 600) {
 			aboutMePhoto.classList.add('aboutme-animation-photo');
 		}
