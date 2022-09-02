@@ -21,17 +21,20 @@ const animationAboutText = () => {
 
 const animationAboutPhoto = () => {
 	if (!window.matchMedia('(max-width: 1024px)').matches) {
-		if (window.scrollY >= 200) {
+		if (window.scrollY >= 600) {
 			aboutMePhoto.classList.add('aboutme-animation-photo');
 		}
 	} else if (window.scrollY >= 1100) {
 		aboutMePhoto.classList.add('aboutme-animation-photo');
 	}
 };
-
+const loadImg = () => {
+	if (!window.matchMedia('(max-width: 768px)').matches) {
+		aboutMePhoto.setAttribute('src', 'dist/img/about_me_photo_desktop.jpg');
+	}
+};
 
 navBtn.addEventListener('click', openNav);
 window.addEventListener('scroll', animationAboutText);
 window.addEventListener('scroll', animationAboutPhoto);
-
-
+loadImg();
