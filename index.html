@@ -101,7 +101,7 @@
 						<div class="couple-box">
 							<div class="couple-photo couple-box-1">
 								<img
-									src="dist/img/portfolio2_mobile.jpg"
+									src="dist/img/portfolio1_mobile.jpg"
 									alt="Zjęcie młodej pary "
 								/>
 								<p>GRAND HOTEL BOUTIQUE</p>
@@ -117,57 +117,97 @@
 						</div>
 						<div class="couple-box">
 							<div class="couple-photo couple-box-3">
-								<img src="dist/img/portfolio3_mobile.jpg" alt="Dorota i Dawid" />
+								<img
+									src="dist/img/portfolio3_mobile.jpg"
+									alt="Dorota i Dawid"
+								/>
 								<p>HOTEL ŁAŃCUT</p>
 								<p>DOROTA & DAWID</p>
 							</div>
 						</div>
 						<div class="couple-box">
 							<div class="couple-photo couple-box-4">
-								<img src="dist/img/portfolio4_mobile.jpg" alt="Dominika i Robert" />
+								<img
+									src="dist/img/portfolio4_mobile.jpg"
+									alt="Dominika i Robert"
+								/>
 								<p>Gdzieś</p>
 								<p>DOMINIKA & ROBERT</p>
 							</div>
 						</div>
 					</div>
 					<div class="bottom-photo">
-						<img src="dist/img/portfolio5_mobile.jpg" alt="Młoda para poatrząca sobie w oczy" />
+						<img
+							src="dist/img/portfolio5_mobile.jpg"
+							alt="Młoda para poatrząca sobie w oczy"
+						/>
 					</div>
 				</div>
 			</section>
 			<section class="contact">
 				<h2>Kontakt</h2>
 				<div class="contact-box">
-					<div class="contact-top"></div>
 					<div class="contact-method">
-						<div class="phone"></div>
-						<div class="gmail"></div>
-						<div class="facebook"></div>
+						<div class="method-phone">
+							<i class="fa-solid fa-phone"></i>+48 575 631 571
+						</div>
+						<div class="method-email">
+							<i class="fa-solid fa-at"></i>E-mail: adrianpruchnik@gmail.com
+						</div>
+						<a
+							href="https://www.facebook.com/adrianpruchnikfotografia"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<div class="method-facebook">
+								<i class="fa-brands fa-facebook-f"></i>@adrianpruchnikfotografia
+							</div></a
+						>
 					</div>
-					<div class="form-contact">
+					<form
+						name="form-contact"
+						onsubmit="return checkFrom()"
+						class="form-contact"
+						action="https://formsubmit.io/send/wosmateusz3@gmail.com" method="POST"
+					>
+						<label for="message">Wiadomość:*</label>
+						<textarea
+							type="message"
+							id="message"
+							name="message"
+							rows="6"
+							required
+						></textarea>
 
-						<div class="form-box">
-							<label for="message">Wiadomość:*</label>
-							<input type="message" id="message" />
-						</div>
-						<div class="form-box">
-							<label for="client-name">imię:*</label>
-							<input type="client-name" id="client-name" />
-						</div>
-						<div class="form-box">
-							<label for="email">E-mail:*</label>
-							<input type="email" id="email" />
-						</div>
-						<div class="form-box">
-							<label for="phone">Nr telefon:*</label>
-							<input type="phone" id="phone" />
-						</div>
+						<label for="client-name">Imię:*</label>
+						<input
+							type="client-name"
+							id="client-name"
+							name="client-name"
+							required
+						/>
+
+						<label for="email">E-mail:*</label>
+						<input
+							type="email "
+							id="email"
+							name="email"
+							placeholder=""
+							required
+						/>
+
+						<label for="phone">Nr telefonu:*</label>
+						<input type="number" id="phone" name="phone" required />
 						<div class="agreement">
-							<input type="radio" />Wyrażam zgodę na przetwarzania powyższych
-							danych osobowych na zasadach opisanych w regulaminie i polityce
-							prywatności. 
+							<input type="radio" name="akcept" required />Wyrażam zgodę na
+							przetwarzania powyższych danych osobowych zgodnie z ustawą o
+							ochronie danych osobowych*.
 						</div>
-					</div>
+
+						<div class="send-btn">
+							<input value="Wyślij" type="submit" class="btn" id="send-btn" />
+						</div>
+					</form>
 				</div>
 			</section>
 		</main>

@@ -8,6 +8,13 @@ const portfolioBox3 = document.querySelector('.couple-box-3');
 const portfolioBox4 = document.querySelector('.couple-box-4');
 const bottomPhoto = document.querySelector('.bottom-photo');
 
+const formContact = document.querySelector('.form-contact');
+const formMsgArea = document.querySelector('#message');
+const formNameInput = document.querySelector('#client-name');
+const formMailInput = document.querySelector('#email');
+const formPhoneInput = document.querySelector('#phone');
+const formBtn = document.querySelector('#send-btn');
+// Navigation
 const openNav = () => {
 	if (!navBox.classList.contains('nav-animation-open')) {
 		navBox.classList.add('nav-animation-open');
@@ -17,6 +24,7 @@ const openNav = () => {
 		navBox.classList.add('nav-animation-close');
 	}
 };
+// Animation in section Aboutme
 const animationAboutText = () => {
 	if (window.scrollY >= 200) {
 		aboutMeText.classList.add('aboutme-animation-text');
@@ -31,16 +39,33 @@ const animationAboutPhoto = () => {
 		aboutMePhoto.classList.add('aboutme-animation-photo');
 	}
 };
+// Loading photo size
 const loadImg = () => {
 	if (!window.matchMedia('(max-width: 768px)').matches) {
 		aboutMePhoto.setAttribute('src', 'dist/img/about_me_photo_desktop.jpg');
-		portfolioBox1.firstElementChild.setAttribute('src', 'dist/img/portfolio1_desktop.jpg');
-		portfolioBox2.firstElementChild.setAttribute('src', 'dist/img/portfolio2_desktop.jpg');
-		portfolioBox3.firstElementChild.setAttribute('src', 'dist/img/portfolio3_desktop.jpg');
-		portfolioBox4.firstElementChild.setAttribute('src', 'dist/img/portfolio4_desktop.jpg');
-		bottomPhoto.firstElementChild.setAttribute('src', 'dist/img/portfolio5_desktop.jpg');
+		portfolioBox1.firstElementChild.setAttribute(
+			'src',
+			'dist/img/portfolio1_desktop.jpg'
+		);
+		portfolioBox2.firstElementChild.setAttribute(
+			'src',
+			'dist/img/portfolio2_desktop.jpg'
+		);
+		portfolioBox3.firstElementChild.setAttribute(
+			'src',
+			'dist/img/portfolio3_desktop.jpg'
+		);
+		portfolioBox4.firstElementChild.setAttribute(
+			'src',
+			'dist/img/portfolio4_desktop.jpg'
+		);
+		bottomPhoto.firstElementChild.setAttribute(
+			'src',
+			'dist/img/portfolio5_desktop.jpg'
+		);
 	}
 };
+// Animation section portfolio
 const animationPortfolio = () => {
 	if (!window.matchMedia('(max-width: 768px)').matches) {
 		if (window.scrollY >= 1700 && window.scrollY < 2200) {
@@ -61,8 +86,28 @@ const animationPortfolio = () => {
 	}
 };
 
+// From validator and send message
+const checkFrom = () => {
+	const re =
+		/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,3}))$/;
+	if (re.test(formMailInput.value)) {
+	} else {
+		formMailInput.value = '';
+		formMailInput.setAttribute('placeholder', 'E-mail nie jest poprawny');
+		event.preventDefault();
+	}
+	if (formPhoneInput.value.length < 9) {
+		formPhoneInput.value = '';
+		formPhoneInput.setAttribute('placeholder', 'numer telefonu jest za krótki');
+		event.preventDefault();
+	}
+};
+
 navBtn.addEventListener('click', openNav);
 window.addEventListener('scroll', animationAboutText);
 window.addEventListener('scroll', animationAboutPhoto);
 window.addEventListener('scroll', animationPortfolio);
+
+
+
 loadImg();

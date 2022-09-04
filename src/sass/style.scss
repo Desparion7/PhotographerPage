@@ -87,7 +87,7 @@ body {
 	display: flex;
 	width: 100%;
 	height: 100vh;
-	background-image: url("../img/main_photo_mobile_1.jpg");
+	background-image: url('../img/main_photo_mobile_1.jpg');
 	background-position: center;
 	background-size: cover;
 }
@@ -172,7 +172,7 @@ h1 {
 }
 h2 {
 	margin-top: -20px;
-	padding: 1em;
+	padding: 0.5em;
 	text-align: center;
 	text-transform: uppercase;
 	color: #b49538;
@@ -299,6 +299,70 @@ h3 {
 		width: 100%;
 	}
 }
+.contact {
+	margin: 2em;
+}
+.contact-method {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 0.5em;
+	.method {
+		margin: 0.5em 0;
+		i {
+			margin-right: 5px;
+			color: #b49538;
+		}
+	}
+	a {
+		color: black;
+	}
+	.method-phone {
+		font-size: 22px;
+	}
+	.method-email {
+		text-align: center;
+		margin: 0.5em 0;
+	}
+	.method-facebook {
+		cursor: pointer;
+	}
+}
+.form-contact {
+	display: flex;
+	flex-direction: column;
+	padding: 0 0.2em;
+	label,
+	textarea,
+	input {
+		margin-bottom: 0.5em;
+	}
+	textarea,
+	input {
+		padding: 0.5em;
+	}
+	textarea {
+		resize: none;
+	}
+	input::placeholder {
+		color: red;
+	}
+}
+.agreement {
+	font-size: 12px;
+	text-align: justify;
+	line-height: 1.6;
+	margin: 0.5em 0;
+	input {
+		margin-right: 5px;
+	}
+}
+.send-btn {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0.5em 0;
+}
 
 //MEDIA//////////////////////////////////////
 @media (min-width: 375px) {
@@ -321,6 +385,9 @@ h3 {
 	}
 	.portfolio {
 		margin-top: 1em;
+	}
+	.method {
+		font-size: 18px;
 	}
 }
 @media (min-width: 587px) {
@@ -363,10 +430,10 @@ h3 {
 		display: none;
 	}
 	.nav {
-		background-image: url("../img/main_photo.jpg");
+		background-image: url('../img/main_photo.jpg');
 		background-size: cover;
 	}
-	
+
 	.nav-box {
 		top: 20px;
 		height: 100px;
@@ -402,6 +469,9 @@ h3 {
 			text-align: center;
 			line-height: 1.6;
 		}
+	}
+	.form-contact {
+		padding: 0 14em;
 	}
 }
 @media (min-width: 1130px) {
