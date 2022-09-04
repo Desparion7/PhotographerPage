@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -29,9 +29,9 @@
 			</div>
 			<div class="nav-box">
 				<div class="nav-items">
-					<a href="#islands" class="nav-item">Strona Główna</a>
-					<a href="#islands" class="nav-item">O mnie</a>
-					<a href="#reviews" class="nav-item">Portfolio</a>
+					<a href="#main" class="nav-item">Strona Główna</a>
+					<a href="#aboutme" class="nav-item">O mnie</a>
+					<a href="#portfolio" class="nav-item">Portfolio</a>
 					<a href="#contact" class="nav-item">Kontakt</a>
 				</div>
 			</div>
@@ -170,6 +170,7 @@
 						class="form-contact"
 						action="https://formsubmit.io/send/wosmateusz3@gmail.com" method="POST"
 					>
+					<input name="_redirect" type="hidden" id="name" value="https://your website url">
 						<label for="message">Wiadomość:*</label>
 						<textarea
 							type="message"
@@ -199,6 +200,7 @@
 						<label for="phone">Nr telefonu:*</label>
 						<input type="number" id="phone" name="phone" required />
 						<input name="_formsubmit_id" type="text" style="display:none">
+						
 						<div class="agreement">
 							<input type="radio" name="akcept" required />Wyrażam zgodę na
 							przetwarzania powyższych danych osobowych zgodnie z ustawą o
@@ -209,6 +211,7 @@
 							<input value="Wyślij" type="submit" class="btn" id="send-btn" />
 						</div>
 					</form>
+					<a href="../potwierdzenie.html">Testowy link</a>
 				</div>
 			</section>
 		</main>
