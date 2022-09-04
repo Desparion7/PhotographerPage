@@ -290,11 +290,11 @@ h3 {
 .portfolio-animation {
 	animation: opacity-animation 1s forwards;
 }
-.bottom-photo{
+.bottom-photo {
 	position: relative;
 	width: 100%;
 	left: 0;
-	img{
+	img {
 		position: relative;
 		width: 100%;
 	}
@@ -363,7 +363,7 @@ h3 {
 		display: none;
 	}
 	.nav {
-		background-image: url(dist/img/main_photo.jpg);
+		background-image: url('dist/img/main_photo.jpg');
 		background-size: cover;
 	}
 	.nav-box {
