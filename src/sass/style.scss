@@ -39,6 +39,9 @@ body {
 		color: #dbcda2;
 		cursor: pointer;
 	}
+	a:hover {
+		color: #fff;
+	}
 }
 .burger-btn {
 	position: absolute;
@@ -568,6 +571,7 @@ h3 {
 	}
 	.owner {
 		position: absolute;
+		width: 45%;
 		z-index: 4;
 	}
 	.nav-items {

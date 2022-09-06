@@ -26,7 +26,6 @@ const openNav = () => {
 	}
 };
 const scrollCloseNav = () => {
-	console.log('ok');
 	navBox.classList.remove('nav-animation-open');
 	navBox.classList.add('nav-animation-close');
 };
