@@ -1,4 +1,5 @@
 @use 'animation';
+@use 'offert_style';
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -24,16 +25,20 @@ body {
 	background-color: rgba(0, 0, 0, 0.9);
 }
 .owner {
+	position: absolute;
 	top: 20px;
 	left: 14px;
 	width: 65%;
 	font-size: 20px;
-	position: absolute;
 	line-height: 1.6;
 	text-transform: uppercase;
 	text-align: center;
-	color: #dbcda2;
 	z-index: 2;
+	a {
+		text-decoration: none;
+		color: #dbcda2;
+		cursor: pointer;
+	}
 }
 .burger-btn {
 	position: absolute;
@@ -83,14 +88,31 @@ body {
 		transition-delay: 0.1s;
 	}
 }
-.nav {
+.nav,
+.nav-confirm,
+.nav-contact,
+.nav-offert {
 	display: flex;
 	width: 100%;
 	height: 100vh;
-	background-image: url('../img/main_photo_mobile_1.jpg');
 	background-position: center;
 	background-size: cover;
 }
+.nav {
+	background-image: url('../img/main_photo_mobile_1.jpg');
+}
+.nav-confirm {
+	background-image: url('../img/nav_confirm_mobile.jpg');
+}
+.nav-contact {
+	background-image: none;
+	height: 100px;
+}
+.nav-offert {
+	background-image: none;
+	height: 100px;
+}
+
 .nav-box {
 	position: absolute;
 	top: 100px;
@@ -142,7 +164,8 @@ body {
 	background-color: transparent;
 	border: none;
 	color: #fff;
-	font-size: 20px;
+	font-size: 48px;
+	z-index: 2;
 }
 .title {
 	position: absolute;
@@ -178,6 +201,10 @@ h2 {
 	text-transform: uppercase;
 	color: #b49538;
 	font-size: 2em;
+}
+.confirm-h2 {
+	background-color: rgba(0, 0, 0, 0.6);
+	margin: 0.3em 0;
 }
 .section-body {
 	display: flex;
@@ -310,12 +337,8 @@ h3 {
 	flex-direction: column;
 	align-items: center;
 	margin-bottom: 0.5em;
-	.method {
-		margin: 0.5em 0;
-		i {
-			margin-right: 5px;
-			color: #b49538;
-		}
+	i {
+		margin-right: 5px;
 	}
 	a {
 		color: black;
@@ -487,7 +510,6 @@ h3 {
 		p {
 			font-size: 18px;
 			font-weight: bold;
-			// color: #b49538;
 		}
 	}
 	.contact-method {
@@ -533,17 +555,27 @@ h3 {
 		background-image: url('../img/main_photo.jpg');
 		background-size: cover;
 	}
+	.nav-confirm {
+		background-image: url('../img/nav_confirm_desktop.jpg');
+	}
 
 	.nav-box {
 		top: 20px;
 		height: 100px;
 		background-color: transparent;
 		opacity: 1;
-		z-index: 2;
+		z-index: 3;
+	}
+	.owner {
+		position: absolute;
+		z-index: 4;
 	}
 	.nav-items {
 		justify-content: end;
 		flex-direction: row;
+	}
+	.nav-animation-close {
+		animation: none;
 	}
 	.title {
 		top: -120px;

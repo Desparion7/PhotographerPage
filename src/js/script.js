@@ -1,5 +1,6 @@
 const navBtn = document.querySelector('.burger-btn');
 const navBox = document.querySelector('.nav-box');
+const arrow = document.querySelector('.arrow');
 const aboutMeText = document.querySelector('.section-body');
 const aboutMePhoto = document.querySelector('.aboutme-img');
 const portfolioBox1 = document.querySelector('.couple-box-1');
@@ -24,10 +25,16 @@ const openNav = () => {
 		navBox.classList.add('nav-animation-close');
 	}
 };
+const scrollCloseNav = () => {
+	console.log('ok');
+	navBox.classList.remove('nav-animation-open');
+	navBox.classList.add('nav-animation-close');
+};
 // Animation in section Aboutme
 const animationAboutText = () => {
 	if (window.scrollY >= 200) {
 		aboutMeText.classList.add('aboutme-animation-text');
+		arrow.style.display = 'none';
 	}
 };
 const animationAboutPhoto = () => {
@@ -98,16 +105,18 @@ const checkFrom = () => {
 	}
 	if (formPhoneInput.value.length < 9) {
 		formPhoneInput.value = '';
-		formPhoneInput.setAttribute('placeholder', 'numer telefonu jest nieprawidłowy');
+		formPhoneInput.setAttribute(
+			'placeholder',
+			'numer telefonu jest nieprawidłowy'
+		);
 		event.preventDefault();
 	}
 };
 
 navBtn.addEventListener('click', openNav);
+window.addEventListener('scroll', scrollCloseNav);
 window.addEventListener('scroll', animationAboutText);
 window.addEventListener('scroll', animationAboutPhoto);
 window.addEventListener('scroll', animationPortfolio);
-
-
 
 loadImg();

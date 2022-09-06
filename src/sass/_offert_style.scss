@@ -1,0 +1,37 @@
+.offert-section {
+	position: relative;
+	top: 50px;
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 6em;
+	// background-color: red;
+}
+.offert-text {
+	margin-bottom: 1em;
+	padding: 0 2em;
+	text-align: justify;
+	line-height: 1.6;
+}
+.offert-h3 {
+	padding: 0 1em;
+	color: #b49538;
+}
+.packiet-list {
+	margin-bottom: 1em;
+	padding: 0 2em;
+	text-align: left;
+	line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+	.offert-text,
+	.packiet-list {
+		padding: 0 6em;
+	}
+}
+@media (min-width: 1024px) {
+	.offert-text,
+	.packiet-list {
+		padding: 0 12em;
+	}
+}
