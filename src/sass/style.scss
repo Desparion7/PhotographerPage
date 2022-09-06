@@ -331,6 +331,7 @@ h3 {
 .form-contact {
 	display: flex;
 	flex-direction: column;
+	margin-top: 1em;
 	padding: 0 0.2em;
 	label,
 	textarea,
@@ -363,7 +364,66 @@ h3 {
 	align-items: center;
 	margin: 0.5em 0;
 }
+.bottom-section {
+	position: relative;
+	background-image: url('../img/footer_mobile.jpg');
+	background-size: cover;
+	background-position: center;
+	font-size: 14px;
+	z-index: 0;
+}
+.bottom-box {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 1em 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	text-transform: uppercase;
+	color: #dbcda2;
+	z-index: 2;
+}
 
+.bottom-ofert,
+.company,
+.bottom-contact {
+	text-align: center;
+	line-height: 1.6;
+}
+
+.bottom-contact {
+	margin-top: 0.3em;
+	text-transform: lowercase;
+	i {
+		margin-right: 5px;
+	}
+}
+.bottom-shadow {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 1;
+}
+.bottom-facebook {
+	display: inline-block;
+	cursor: pointer;
+	a {
+		color: #dbcda2;
+	}
+}
+.copy-right {
+	position: relative;
+	z-index: 2;
+	padding: 1em 0;
+	text-align: center;
+	text-transform: uppercase;
+	color: #dbcda2;
+	background-color: black;
+}
 //MEDIA//////////////////////////////////////
 @media (min-width: 375px) {
 	.owner {
@@ -414,9 +474,42 @@ h3 {
 	.couple-photo {
 		padding: 0 1em;
 		img:hover {
-			filter: brightness(1.2);
+			// filter: brightness(1.2);
 			transform: scale(1.05);
 		}
+		p{
+			font-size: 18px;
+			font-weight: bold;
+			// color: #b49538;
+		}
+	}
+	.contact-method {
+		font-size: 20px;
+	}
+	label {
+		font-size: 20px;
+	}
+	textarea,
+	input {
+		font-size: 18px;
+	}
+	.agreement {
+		font-size: 16px;
+	}
+	.company {
+		margin-bottom: 1em;
+	}
+	.company-offert {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+	.bottom-ofert {
+		margin-right: 4em;
+	}
+	.bottom-contact{
+		margin-left: 4em;
 	}
 }
 

@@ -98,7 +98,7 @@ const checkFrom = () => {
 	}
 	if (formPhoneInput.value.length < 9) {
 		formPhoneInput.value = '';
-		formPhoneInput.setAttribute('placeholder', 'numer telefonu jest za krótki');
+		formPhoneInput.setAttribute('placeholder', 'numer telefonu jest nieprawidłowy');
 		event.preventDefault();
 	}
 };
