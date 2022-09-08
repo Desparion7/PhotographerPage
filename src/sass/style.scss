@@ -1,9 +1,13 @@
 @use 'animation';
 @use 'offert_style';
+@use 'portfolio_style';
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+}
+html {
+	scroll-behavior: smooth;
 }
 body {
 	position: relative;
@@ -94,7 +98,8 @@ body {
 .nav,
 .nav-confirm,
 .nav-contact,
-.nav-offert {
+.nav-offert,
+.nav-portfolio {
 	display: flex;
 	width: 100%;
 	height: 100vh;
@@ -114,6 +119,10 @@ body {
 .nav-offert {
 	background-image: none;
 	height: 100px;
+}
+.nav-portfolio {
+	background-image: url('../img/na_portfolio_mobile.jpg');
+	background-position: 73%;
 }
 
 .nav-box {
@@ -160,15 +169,23 @@ body {
 	position: absolute;
 	bottom: 30px;
 	display: flex;
-	width: 100%;
+	width: 50px;
 	height: 40px;
-	justify-content: center;
-	align-items: center;
+	right: 50%;
+	transform: translateX(50%);
 	background-color: transparent;
+	transition: transform 0.3s;
 	border: none;
-	color: #fff;
+	color: #ffffff;
 	font-size: 48px;
 	z-index: 2;
+	cursor: pointer;
+}
+.arrow:focus {
+	border: none;
+}
+.arrow:hover {
+	transform: translateX(50%) translateY(10px);
 }
 .title {
 	position: absolute;
@@ -312,11 +329,11 @@ h3 {
 		width: 100%;
 		border-radius: 5px;
 		transition: 0.3s;
-		cursor: pointer;
+		transform: scale(0.9);
 	}
 	p {
 		text-align: center;
-		margin: 0.5em 0;
+		margin: 1em 0;
 		text-transform: uppercase;
 	}
 }
@@ -508,7 +525,7 @@ h3 {
 		padding: 0 1em;
 		img:hover {
 			// filter: brightness(1.2);
-			transform: scale(1.05);
+			transform: scale(1);
 		}
 		p {
 			font-size: 18px;
@@ -561,6 +578,9 @@ h3 {
 	.nav-confirm {
 		background-image: url('../img/nav_confirm_desktop.jpg');
 	}
+	.nav-portfolio {
+		background-image: url('../img/na_portfolio_desktop.jpg');
+	}
 
 	.nav-box {
 		top: 20px;
@@ -582,7 +602,7 @@ h3 {
 		animation: none;
 	}
 	.title {
-		top: -120px;
+		top: -60px;
 	}
 	h1 {
 		font-size: 2.5em;
@@ -598,6 +618,9 @@ h3 {
 		text-align: justify;
 		line-height: 1.6;
 		margin-bottom: 1em;
+	}
+	.aboutme-photo {
+		padding: 0 6em;
 	}
 	.portfolio-text {
 		padding: 0 12em;

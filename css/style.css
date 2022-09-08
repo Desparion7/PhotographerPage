@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   position: relative;
   height: 100vh;
@@ -213,6 +217,11 @@ body {
   color: #fff;
   font-size: 48px;
   z-index: 2;
+  cursor: pointer;
+}
+
+.arrow:focus {
+  border: none;
 }
 
 .title {
@@ -408,12 +417,13 @@ h3 {
   border-radius: 5px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  cursor: pointer;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .couple-photo p {
   text-align: center;
-  margin: 0.5em 0;
+  margin: 1em 0;
   text-transform: uppercase;
 }
 
@@ -676,8 +686,8 @@ h3 {
     padding: 0 1em;
   }
   .couple-photo img:hover {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   .couple-photo p {
     font-size: 18px;

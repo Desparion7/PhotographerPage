@@ -29,6 +29,17 @@ const scrollCloseNav = () => {
 	navBox.classList.remove('nav-animation-open');
 	navBox.classList.add('nav-animation-close');
 };
+const scrollDownBtn = () => {
+	window.scrollBy(0, 600);
+};
+
+const arrowAnimation = () => {
+	if (window.scrollY >= 200) {
+		arrow.style.display = 'none';
+	} else if (window.scrollY >= 50) {
+		arrow.style.display = 'block';
+	}
+};
 // Animation in section Aboutme
 const animationAboutText = () => {
 	if (window.scrollY >= 200) {
@@ -113,6 +124,8 @@ const checkFrom = () => {
 };
 
 navBtn.addEventListener('click', openNav);
+arrow.addEventListener('click', scrollDownBtn);
+window.addEventListener('scroll', arrowAnimation);
 window.addEventListener('scroll', scrollCloseNav);
 window.addEventListener('scroll', animationAboutText);
 window.addEventListener('scroll', animationAboutPhoto);
