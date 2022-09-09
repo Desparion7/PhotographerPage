@@ -67,6 +67,9 @@ const hidePopup = () => {
 	thumbnails.forEach((element) => {
 		element.setAttribute('tabindex', 0);
 	});
+	if (screen.width === window.innerWidth) {
+		closeFullscreen();
+	}
 };
 thumbnails.forEach((thumbnail, index) => {
 	const ShowPopup = (e) => {
@@ -101,11 +104,36 @@ const addPhotoNumber = () => {
 	allPhotoNumber.textContent = thumbnails.length;
 };
 
-arrowNext.addEventListener('click', showNextImg);
-arrowPrev.addEventListener('click', showPrevImg);
-closeBtn.addEventListener('click', hidePopup);
+const openFullscreen = () => {
+	if (popup.requestFullscreen) {
+		popup.requestFullscreen();
+	} else if (popup.webkitRequestFullscreen) {
+		/* Safari */
+		popup.webkitRequestFullscreen();
+	} else if (popup.msRequestFullscreen) {
+		/* IE11 */
+		popup.msRequestFullscreen();
+	}
+};
+const closeFullscreen = () => {
+	if (document.exitFullscreen) {
+		document.exitFullscreen();
+	} else if (document.webkitExitFullscreen) {
+		/* Safari */
+		document.webkitExitFullscreen();
+	} else if (document.msExitFullscreen) {
+		/* IE11 */
+		document.msExitFullscreen();
+	}
+};
+
 
 navBtn.addEventListener('click', openNav);
 window.addEventListener('scroll', scrollCloseNav);
 arrow.addEventListener('click', scrollDownBtn);
 window.addEventListener('scroll', arrowAnimation);
+
+arrowNext.addEventListener('click', showNextImg);
+arrowPrev.addEventListener('click', showPrevImg);
+closeBtn.addEventListener('click', hidePopup);
+popupImg.addEventListener('dblclick', openFullscreen);
