@@ -26,7 +26,6 @@ const scrollCloseNav = () => {
 navBtn.addEventListener('click', openNav);
 window.addEventListener('scroll', scrollCloseNav);
 
-
 // From validator and send message
 const checkFrom = () => {
 	const re =

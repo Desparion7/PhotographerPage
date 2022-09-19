@@ -1,6 +1,5 @@
 const navBtn = document.querySelector('.burger-btn');
 const navBox = document.querySelector('.nav-box');
-
 // Navigation
 const openNav = () => {
 	if (!navBox.classList.contains('nav-animation-open')) {
@@ -15,6 +14,5 @@ const scrollCloseNav = () => {
 	navBox.classList.remove('nav-animation-open');
 	navBox.classList.add('nav-animation-close');
 };
-
 navBtn.addEventListener('click', openNav);
 window.addEventListener('scroll', scrollCloseNav);
