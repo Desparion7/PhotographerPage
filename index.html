@@ -29,7 +29,7 @@
 				<div class="owner">
 					<a href="index.html">Adrian Pruchnik Fotograf</a>
 				</div>
-				<button class="burger-btn" tittle="menu">
+				<button class="burger-btn" title="menu" name="menu">
 					<div class="burger-btn-box">
 						<div class="burger-btn-bars"></div>
 					</div>
@@ -267,7 +267,7 @@
 							name="_redirect"
 							type="hidden"
 							id="name"
-							value="https://desparion7.github.io/PhotographerPage/potwierdzenie.html"
+							value="https://adrianpruchnik.pl/potwierdzenie.html"
 						/>
 						<label for="message">Wiadomość:*</label>
 						<textarea
@@ -297,9 +297,11 @@
 						<input type="number" id="phone" name="phone" required />
 						<input name="_formsubmit_id" type="text" style="display: none" />
 						<div class="agreement">
-							<input type="radio" name="akcept" required />Wyrażam zgodę na
-							przetwarzania powyższych danych osobowych zgodnie z ustawą o
-							ochronie danych osobowych*.
+							<input type="radio" name="akcept" id="akcept" required />
+							<label for="akcept"
+								>Wyrażam zgodę na przetwarzania powyższych danych osobowych
+								zgodnie z ustawą o ochronie danych osobowych*.</label
+							>
 						</div>
 						<div class="send-btn">
 							<input value="Wyślij" type="submit" class="btn" id="send-btn" />
