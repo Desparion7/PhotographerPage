@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--foreground-rgb: 0, 0, 0;
+	--main-background: linear-gradient(
+		90deg,
+		rgb(239, 239, 219),
+		rgb(243, 243, 240) 50%
+	);
+	--main-color: #d9c27e;
+	--second-color: #b49538;
+}
