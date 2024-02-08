@@ -25,7 +25,7 @@ const Header = () => {
 	return (
 		<>
 			<motion.header
-				className='absolute flex sm:justify-center justify-between w-[100%] sm:h-[9vh] z-10 top-0 bg-black  text-white'
+				className='flex sticky sm:justify-center justify-between w-[100%] sm:h-[9vh] z-10 top-0 bg-black  text-white'
 				variants={{
 					visible: { y: 0 },
 					hidden: { y: -200 },
@@ -33,7 +33,7 @@ const Header = () => {
 				transition={{ duration: 0.5, ease: 'easeInOut' }}
 			>
 				<motion.nav
-					className='sm:container  flex justify-between items-center py-2 w-[100vw]'
+					className='sm:container flex justify-between items-center py-2 w-[100vw]'
 					initial={{ opacity: 0, y: -50 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.5 }}

@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
-import { Montserrat } from 'next/font/google';
+import { Roboto_Slab } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/header';
+import Footer from '@/components/footer';
 
-const montserrat = Montserrat({
+const montserrat = Roboto_Slab({
 	weight: ['300', '400', '500', '700'],
 	subsets: ['latin'],
 	display: 'swap',
@@ -31,6 +32,7 @@ export default function RootLayout({
 			<body className={`${montserrat.className} bg-main-background`}>
 				<Header />
 				<main>{children}</main>
+				<Footer />
 			</body>
 		</html>
 	);

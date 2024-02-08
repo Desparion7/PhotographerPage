@@ -1,8 +1,12 @@
 import Intro from './components/intro';
-import ZoomOnScrollImage from '../components/zoomPhoto';
 import AboutMe from './components/about-me';
 import ButtonsSection from './components/buttons-section';
 import CarouselSection from './components/carousel-section';
+import AboutMyPhotos from './components/about-my-photos';
+import PortfolioIntroduction from './components/portfolio-introduction';
+import MyAdvices from './components/my-advices';
+import Contact from './components/contact';
+import ContactForm from './components/contact-form';
 
 export default function Home() {
 	return (
@@ -11,8 +15,11 @@ export default function Home() {
 			<ButtonsSection />
 			<AboutMe />
 			<CarouselSection />
-			{/* <ZoomOnScrollImage /> */}
-			<div className='min-h-[100vh]'></div>
+			<AboutMyPhotos />
+			<PortfolioIntroduction />
+			<MyAdvices />
+			<Contact />
+			<ContactForm />
 		</>
 	);
 }

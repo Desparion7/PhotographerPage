@@ -26,14 +26,20 @@ const ButtonsSection = () => {
 	};
 	return (
 		<section className='relative container mx-auto flex justify-center items-center w-[100%] lg:py-10 sm:px-5'>
-			<div className='flex flex-col justify-center items-center'>
+			<motion.div
+				className='flex flex-col justify-center items-center'
+				initial={{ x: -200, opacity: 0 }}
+				transition={{ duration: 0.5 }}
+				whileInView={{ x: 0, opacity: 1 }}
+				viewport={{ once: true }}
+			>
 				<h2 className='text-black my-5 sm:my-10 text-2xl sm:text-4xl text-center'>
 					Profesjonalne Zdjęcia Ślubne
 				</h2>
 				<div className='flex flex-col lg:flex-row items-center justify-center gap-5 lg:gap-10 text-sm sm:text-md w-[100%]'>
 					<Link href='/oferta'>
 						<motion.button
-							className='flex flex-row items-center gap-3 border-black border-4 py-3  px-6 rounded-3xl bg-black  text-main-color uppercase'
+							className='flex flex-row items-center gap-3 border-black border-4 py-3 px-6 rounded-3xl bg-black  text-main-color uppercase'
 							onHoverStart={() => setIsHovered(true)}
 							onHoverEnd={() => setIsHovered(false)}
 							variants={buttonVariants}
@@ -68,7 +74,7 @@ const ButtonsSection = () => {
 						</motion.button>
 					</Link>
 				</div>
-			</div>
+			</motion.div>
 		</section>
 	);
 };

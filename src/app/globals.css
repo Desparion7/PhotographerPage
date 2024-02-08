@@ -12,3 +12,14 @@
 	--main-color: #d9c27e;
 	--second-color: #b49538;
 }
+
+@layer utilities {
+	.text-balance {
+		text-wrap: balance;
+	}
+	input[type='number']::-webkit-inner-spin-button,
+	input[type='number']::-webkit-outer-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+}

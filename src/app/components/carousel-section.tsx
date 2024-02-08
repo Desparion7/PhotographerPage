@@ -5,27 +5,27 @@ import React, { useState } from 'react';
 
 const images = [
 	{
-		src: '/13_mobile.jpg',
+		src: '/main_page_photos/13_mobile.jpg',
 		alt: 'zdjęcie Panny młodej wykonane przez Adrian Pruchnik',
 	},
 	{
-		src: '/33_mobile.jpg',
+		src: '/main_page_photos/33_mobile.jpg',
 		alt: 'zdjęcie Panny młodej wykonane przez Adrian Pruchnik',
 	},
 	{
-		src: '/10_mobile.jpg',
+		src: '/main_page_photos/10_mobile.jpg',
 		alt: 'zdjęcie Panny młodej wykonane przez Adrian Pruchnik',
 	},
 	{
-		src: '/22_mobile.jpg',
+		src: '/main_page_photos/22_mobile.jpg',
 		alt: 'zdjęcie Panny młodej wykonane przez Adrian Pruchnik',
 	},
 	{
-		src: '/48_mobile.jpg',
+		src: '/main_page_photos/48_mobile.jpg',
 		alt: 'zdjęcie Panny młodej wykonane przez Adrian Pruchnik',
 	},
 	{
-		src: '/21_mobile.jpg',
+		src: '/main_page_photos/21_mobile.jpg',
 		alt: 'zdjęcie Panny młodej wykonane przez Adrian Pruchnik',
 	},
 ];
@@ -41,7 +41,7 @@ const CarouselSection = () => {
 
 	return (
 		<section>
-			<div className='mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2'>
+			<div className='my-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2'>
 				{images.map((image, index) => (
 					<div
 						key={index}
