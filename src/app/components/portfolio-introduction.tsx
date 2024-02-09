@@ -142,7 +142,7 @@ const PortfolioIntroduction = () => {
 					>
 						<Image
 							src={activeImageSrc}
-							layout='fill'
+							// layout='fill'
 							objectFit='contain'
 							alt='Pełnoekranowe zdjęcie'
 						/>

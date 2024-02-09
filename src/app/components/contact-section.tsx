@@ -5,7 +5,7 @@ import { FaFacebookMessenger } from 'react-icons/fa';
 import { MdOutlineMailOutline } from 'react-icons/md';
 import { motion } from 'framer-motion';
 
-const Contact = () => {
+const ContactSection = () => {
 	return (
 		<section className='relative container mx-auto items-center w-[100%] py-5 xl:py-10 px-2  xl:px-5 text-black'>
 			<motion.div
@@ -37,4 +37,4 @@ const Contact = () => {
 	);
 };
 
-export default Contact;
+export default ContactSection;

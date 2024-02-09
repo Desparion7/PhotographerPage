@@ -5,8 +5,8 @@ import CarouselSection from './components/carousel-section';
 import AboutMyPhotos from './components/about-my-photos';
 import PortfolioIntroduction from './components/portfolio-introduction';
 import MyAdvices from './components/my-advices';
-import Contact from './components/contact';
 import ContactForm from './components/contact-form';
+import ContactSection from './components/contact-section';
 
 export default function Home() {
 	return (
@@ -18,7 +18,7 @@ export default function Home() {
 			<AboutMyPhotos />
 			<PortfolioIntroduction />
 			<MyAdvices />
-			<Contact />
+			<ContactSection />
 			<ContactForm />
 		</>
 	);

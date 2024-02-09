@@ -53,7 +53,6 @@ const CarouselSection = () => {
 							width={1169}
 							height={780}
 							alt={image.alt}
-							layout='responsive'
 						/>
 					</div>
 				))}

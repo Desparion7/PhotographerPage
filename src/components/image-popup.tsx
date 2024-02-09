@@ -1,12 +1,12 @@
 'use client';
 import React, { useCallback, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import { MdArrowForwardIos, MdOutlineArrowBackIos } from 'react-icons/md';
 import { GrClose } from 'react-icons/gr';
 
 type ImagePopupProps = {
-	src: string;
+	src: StaticImageData | string;
 	onClose: () => void;
 	currentIndex: number;
 	setImageIndex: (index: number) => void;
