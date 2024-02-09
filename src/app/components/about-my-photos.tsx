@@ -4,18 +4,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const AboutMyPhotos = () => {
-	const containerVariants = {
-		hidden: {},
-		visible: {
-			transition: {
-				staggerChildren: 0.2,
-			},
-		},
-	};
-	const itemVariants = {
-		hidden: { x: -50, opacity: 0 },
-		visible: { x: 0, opacity: 1, transition: { duration: 0.5 } },
-	};
 	return (
 		<section className='relative container mx-auto items-center w-[100%] py-5 xl:py-10 px-2 xl:px-5'>
 			<div className='xl:mx-20'>
@@ -28,16 +16,13 @@ const AboutMyPhotos = () => {
 				>
 					CO WYRÓŻNIA FOTOGRAFIE ŚLUBNĄ W MOIM WYKONANIU
 				</motion.h2>
-				<motion.div
-					className='grid grid-cols-1 lg:grid-cols-2 gap-4'
-					variants={containerVariants}
-					initial='hidden'
-					whileInView='visible'
-					viewport={{ once: true, amount: 0.5 }}
-				>
+				<div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
 					<motion.div
 						className='p-4 shadow-lg rounded-lg'
-						variants={itemVariants}
+						initial={{ x: '-100px', opacity: 0 }}
+						whileInView={{ x: 0, opacity: 1 }}
+						transition={{ ease: 'easeOut', duration: 0.5 }}
+						viewport={{ once: true }}
 					>
 						<h3 className='font-semibold text-lg'>
 							Wyczucie estetyki i kompozycji
@@ -52,7 +37,10 @@ const AboutMyPhotos = () => {
 					</motion.div>
 					<motion.div
 						className='p-4 shadow-lg rounded-lg'
-						variants={itemVariants}
+						initial={{ x: '-100px', opacity: 0 }}
+						whileInView={{ x: 0, opacity: 1 }}
+						transition={{ ease: 'easeOut', duration: 0.5 }}
+						viewport={{ once: true }}
 					>
 						<h3 className='font-semibold text-lg'>
 							Techniczna wiedza i innowacyjność
@@ -68,7 +56,10 @@ const AboutMyPhotos = () => {
 					</motion.div>
 					<motion.div
 						className='p-4 shadow-lg rounded-lg'
-						variants={itemVariants}
+						initial={{ x: '-100px', opacity: 0 }}
+						whileInView={{ x: 0, opacity: 1 }}
+						transition={{ ease: 'easeOut', duration: 0.5 }}
+						viewport={{ once: true }}
 					>
 						<h3 className='font-semibold text-lg'>
 							Umiejętność pracy z ludźmi
@@ -85,7 +76,10 @@ const AboutMyPhotos = () => {
 					</motion.div>
 					<motion.div
 						className='p-4 shadow-lg rounded-lg'
-						variants={itemVariants}
+						initial={{ x: '-100px', opacity: 0 }}
+						whileInView={{ x: 0, opacity: 1 }}
+						transition={{ ease: 'easeOut', duration: 0.5 }}
+						viewport={{ once: true }}
 					>
 						<h3 className='font-semibold text-lg'>
 							Elastyczność i adaptacja
@@ -99,7 +93,7 @@ const AboutMyPhotos = () => {
 							przekraczają oczekiwania.
 						</p>
 					</motion.div>
-				</motion.div>
+				</div>
 				<motion.div
 					className='mt-10'
 					initial={{ opacity: 0 }}
