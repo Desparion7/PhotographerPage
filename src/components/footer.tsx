@@ -22,7 +22,7 @@ const Footer = () => {
 			<div className='relative container mx-auto w-[100%] flex flex-col sm:flex-row justify-around gap-2 sm:gap-5 py-5 px-2 xl:px-5'>
 				<div className='relative w-[6rem]'>
 					<Image
-						src='/logo.png'
+						src='/logo.PNG'
 						alt='logo'
 						width={239}
 						height={251}

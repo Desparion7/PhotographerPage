@@ -8,7 +8,7 @@ const Intro = ({}) => {
 		<section className='relative bg-black  flex justify-center items-center w-[100%] h-[91vh] bg-opacity-40'>
 			<div className=''>
 				<Image
-					src='/main_page_photos/main-page.JPG'
+					src='/main_page_photos/main-page.jpg'
 					alt='Uroczystości i eventy fotografowane przez Adriana Pruchnika'
 					sizes='100vw'
 					fill

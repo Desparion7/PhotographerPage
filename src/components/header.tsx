@@ -49,7 +49,7 @@ const Header = () => {
 							>
 								<div className='hidden custom:inline ml-[1rem] sm:ml-0 w-[3rem] sm:w-[4rem] h-auto'>
 									<Image
-										src='/logo.png'
+										src='/logo.PNG'
 										alt='logo'
 										width={239}
 										height={251}

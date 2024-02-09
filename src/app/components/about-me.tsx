@@ -15,7 +15,7 @@ const AboutMe = () => {
 			>
 				<div className='relative lg:w-[40%] mb-5 flex  justify-center'>
 					<Image
-						src='/main_page_photos/adrian.png'
+						src='/main_page_photos/adrian.PNG'
 						width={500}
 						height={500}
 						alt='Zdjęcie Adriana Pruchnika Fotografa'
