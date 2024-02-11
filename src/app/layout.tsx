@@ -28,7 +28,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang='en'>
+		<html lang='pl'>
 			<body className={`${montserrat.className} bg-main-background`}>
 				<Header />
 				<main>{children}</main>

@@ -27,10 +27,15 @@ const ContactSection = () => {
 						<MdOutlineMailOutline />
 						<p>E-mail: adrianpruchnik@gmail.com</p>
 					</div>
-					<div className='flex items-center gap-2'>
+					<a
+						className='flex items-center gap-2'
+						href='https://www.facebook.com/adrianpruchnikfotografia'
+						target='_blank'
+						rel='noopener noreferrer'
+					>
 						<FaFacebookMessenger />
 						<p>@adrianpruchnikfotografia</p>
-					</div>
+					</a>
 				</div>
 			</motion.div>
 		</section>

@@ -49,7 +49,7 @@ const MobileMenu = ({ handleToggleMenu, menuVisible }: MobileMenuProps) => {
 							</ul>
 							<div className='flex justify-center'>
 								<Image
-									src='/logo.png'
+									src='/logo.PNG'
 									alt='logo'
 									width={245}
 									height={229}

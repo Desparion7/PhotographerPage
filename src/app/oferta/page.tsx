@@ -37,27 +37,27 @@ const Offert = () => {
 				<h2 className='custom:text-xl xl:text-3xl text-second-color uppercase font-semibold my-5'>
 					PAKIET: „KAMERALNIE” CENA PAKIETU: 2700 ZŁ
 				</h2>
-				<p className='mb-2 xl:text-lg leading-8'>
+				<p className='mb-1 xl:text-lg leading-8'>
 					Wykonanie reportażu od ceremonii w kościele/urzędzie do
 					około godziny 22.00 – czas pracy do 10h
 				</p>
-				<p className='mb-2 xl:text-lg leading-8'>
+				<p className='mb-1 xl:text-lg leading-8'>
 					Wykonanie zdjęć grupowych/pozowanych według wskazówek
 					Państwa Młodych
 				</p>
-				<p className='mb-2 xl:text-lg leading-8'>
+				<p className='mb-1 xl:text-lg leading-8'>
 					Plener w wybranym i zaakceptowanym przez Młodych oraz
 					fotografa miejscu oraz terminie (łączny czas na plener wraz
 					z dojazdem 8 godzin)
 				</p>
-				<p className='mb-2 xl:text-lg leading-8'>
+				<p className='mb-1 xl:text-lg leading-8'>
 					Zdjęcia w formie elektronicznej do pobrania z bezpiecznego
 					serwera, zabezpieczone hasłem
 				</p>
-				<p className='mb-2 xl:text-lg leading-8'>
+				<p className='mb-1 xl:text-lg leading-8'>
 					Dojazd do 100 km od Rzeszowa
 				</p>
-				<p className='mb-2 xl:text-lg leading-8'>
+				<p className='mb-1 xl:text-lg leading-8'>
 					Łączna liczba zdjęć z reportażu: 300
 				</p>
 			</motion.div>
@@ -71,27 +71,27 @@ const Offert = () => {
 				<h2 className='custom:text-xl xl:text-3xl text-second-color uppercase font-semibold my-5'>
 					PAKIET: „UROCZYŚCIE” CENA PAKIETU: 3200 ZŁ
 				</h2>
-				<p className='mb-2 xl:text-lg leading-8'>
+				<p className='mb-1 xl:text-lg leading-8'>
 					Wykonanie reportażu przygotowań do końca oczepin lub do
 					około godziny 1.00 – czas pracy około 12-13 godzin
 				</p>
-				<p className='mb-2 xl:text-lg leading-8'>
+				<p className='mb-1 xl:text-lg leading-8'>
 					Wykonanie zdjęć grupowych/pozowanych według wskazówek
 					Państwa Młodych
 				</p>
-				<p className='mb-2 xl:text-lg leading-8'>
+				<p className='mb-1 xl:text-lg leading-8'>
 					Plener w wybranym i zaakceptowanym przez Młodych oraz
 					fotografa miejscu oraz terminie (łączny czas na plener wraz
 					z dojazdem 12 godzin)
 				</p>
-				<p className='mb-2 xl:text-lg leading-8'>
+				<p className='mb-1 xl:text-lg leading-8'>
 					Zdjęcia w formie elektronicznej do pobrania z bezpiecznego
 					serwera, zabezpieczone hasłem
 				</p>
-				<p className='mb-2 xl:text-lg leading-8'>
+				<p className='mb-1 xl:text-lg leading-8'>
 					Dojazd do 100 km od Rzeszowa
 				</p>
-				<p className='mb-2 xl:text-lg leading-8'>
+				<p className='mb-1 xl:text-lg leading-8'>
 					Łączna liczba zdjęć z reportażu: 400
 				</p>
 			</motion.div>
@@ -105,30 +105,30 @@ const Offert = () => {
 				<h2 className='custom:text-xl xl:text-3xl text-second-color uppercase font-semibold my-5'>
 					PAKIET: „BEZGRANICZNIE” CENA PAKIETU: 3500 ZŁ
 				</h2>
-				<p className='mb-2 xl:text-lg leading-8'>
+				<p className='mb-1 xl:text-lg leading-8'>
 					Wykonanie reportażu przygotowań do końca oczepin lub do
 					około godziny 1.00 – czas pracy około 12-13 godzin
 				</p>
-				<p className='mb-2 xl:text-lg leading-8'>
+				<p className='mb-1 xl:text-lg leading-8'>
 					Wykonanie zdjęć grupowych/pozowanych według wskazówek
 					Państwa Młodych
 				</p>
-				<p className='mb-2 xl:text-lg leading-8'>
+				<p className='mb-1 xl:text-lg leading-8'>
 					Plener w wybranym i zaakceptowanym przez Młodych oraz
 					fotografa miejscu oraz terminie (łączny czas na plener wraz
 					z dojazdem 16 godzin)
 				</p>
-				<p className='mb-2 xl:text-lg leading-8'>
+				<p className='mb-1 xl:text-lg leading-8'>
 					Zdjęcia w formie elektronicznej do pobrania z bezpiecznego
 					serwera, zabezpieczone hasłem
 				</p>
-				<p className='mb-2 xl:text-lg leading-8'>
+				<p className='mb-1 xl:text-lg leading-8'>
 					Dojazd do 150 km od Rzeszowa
 				</p>
-				<p className='mb-2 xl:text-lg leading-8'>
+				<p className='mb-1 xl:text-lg leading-8'>
 					Łączna liczba zdjęć z reportażu: 550
 				</p>
-				<p className='mb-2 xl:text-lg leading-8'>
+				<p className='mb-1 xl:text-lg leading-8'>
 					Fotoalbum na 15 rozkładówek- o wymiarach 25x25
 				</p>
 			</motion.div>
@@ -142,7 +142,7 @@ const Offert = () => {
 				<h2 className='custom:text-xl xl:text-3xl text-second-color uppercase font-semibold my-5'>
 					DLA CHCĄCYCH WIĘCEJ:
 				</h2>
-				<p className='mb-2 xl:text-lg leading-8'>
+				<p className='mb-1 xl:text-lg leading-8'>
 					Możliwość wykonania fotoksiążki, fotoalbumu, albumu,
 					fotokalendarza oraz innych fotoproduktów ze zdjęciami z
 					Waszego dnia – cena zależna od produktu Drugi fotograf-
@@ -151,7 +151,7 @@ const Offert = () => {
 					„Kameralnie” 1200 zł, do pakietu „Uroczyście” 1500 zł, do
 					pakietu „Bezgranicznie” 1800 zł
 				</p>
-				<p className='mb-2 xl:text-lg leading-8'>
+				<p className='mb-1 xl:text-lg leading-8'>
 					Dodatkowa liczba zdjęć: 300 zł za 100 zdjęć
 				</p>
 			</motion.div>
