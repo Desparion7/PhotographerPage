@@ -106,6 +106,7 @@ const AboutMyPhotos = () => {
 						width={1980}
 						height={1320}
 						alt='Zjęcie tańczącej młodej pary wykonane przez Adriana Pruchnika'
+						className='rounded-lg'
 					/>
 				</motion.div>
 			</div>

@@ -117,19 +117,21 @@ const PortfolioIntroduction = () => {
 					{images.map((image, index) => (
 						<div
 							key={index}
-							className='overflow-hidden cursor-pointer'
+							className='overflow-hidden cursor-pointer rounded-lg'
 							onClick={() => openModal(image.src)}
 						>
 							<motion.div
 								initial={{ scale: 1.2 }}
 								whileHover={{ scale: 1 }}
 								transition={{ duration: 0.3 }}
+								className='overflow-hidden rounded-lg'
 							>
 								<Image
 									src={image.src}
 									width={image.width}
 									height={image.height}
 									alt={image.alt}
+									className='rounded-lg'
 								/>
 							</motion.div>
 						</div>
@@ -142,7 +144,6 @@ const PortfolioIntroduction = () => {
 					>
 						<Image
 							src={activeImageSrc}
-							// layout='fill'
 							objectFit='contain'
 							alt='Pełnoekranowe zdjęcie'
 						/>

@@ -7,19 +7,19 @@ const AboutMe = () => {
 	return (
 		<section className='relative container mx-auto w-[100%] py-10 px-2 xl:px-5'>
 			<motion.div
-				className=' xl:mx-20 flex flex-col lg:flex-row justify-center items-center lg:justify-between'
+				className=' xl:mx-20 flex flex-col lg:flex-row justify-center items-center lg:justify-around'
 				initial={{ opacity: 0 }}
 				transition={{ duration: 1 }}
 				whileInView={{ x: 0, opacity: 1 }}
 				viewport={{ once: true }}
 			>
-				<div className='relative lg:w-[40%] mb-5 flex  justify-center'>
+				<div className='relative lg:w-[40%] mb-5 flex  justify-center rounded-lg'>
 					<Image
-						src='/main_page_photos/adrian.PNG'
+						src='/Adrian Pruchnik Fotograf.jpg'
 						width={500}
 						height={500}
 						alt='Zdjęcie Adriana Pruchnika Fotografa'
-						className='w-[100%]'
+						className='w-[100%] rounded-lg'
 					/>
 				</div>
 				<div className='lg:w-[50%]  shadow-lg rounded-lg p-4'>
