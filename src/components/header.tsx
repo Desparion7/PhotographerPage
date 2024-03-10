@@ -25,7 +25,7 @@ const Header = () => {
 	return (
 		<>
 			<motion.header
-				className='flex sticky sm:justify-center justify-between w-[100%] sm:h-[9vh] z-10 top-0 bg-black  text-white'
+				className='flex sticky sm:justify-center justify-between w-[100%] sm:h-[6rem] z-10 top-0 bg-black  text-white'
 				variants={{
 					visible: { y: 0 },
 					hidden: { y: -200 },
@@ -47,21 +47,15 @@ const Header = () => {
 								}}
 								className='flex items-center'
 							>
-								<div className='hidden custom:inline ml-[1rem] sm:ml-0 w-[3rem] sm:w-[4rem] h-auto'>
+								<div className='hidden custom:inline ml-[1rem] sm:ml-0 w-[14rem] sm:w-[15rem] h-auto'>
 									<Image
-										src='/logo.PNG'
+										src='/logo.png'
 										alt='logo'
 										width={239}
 										height={251}
 										priority
 									/>
 								</div>
-								<p className=' ml-[1rem] sm:ml-[0] text-main-color text-xl uppercase'>
-									Adrian Pruchnik{' '}
-									<span className='hidden custom:inline'>
-										Fotograf
-									</span>
-								</p>
 							</motion.div>
 						</Link>
 					</div>

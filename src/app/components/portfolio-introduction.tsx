@@ -76,7 +76,7 @@ const PortfolioIntroduction = () => {
 		};
 	}, [isModalOpen]);
 	return (
-		<section className='relative container mx-auto items-center w-[100%] py-5 xl:py-10 px-2  xl:px-5'>
+		<section className='relative lg:container lg:mx-auto items-center w-[100%] py-5 xl:py-10 px-4  xl:px-5'>
 			<div className='xl:mx-20'>
 				<motion.div
 					initial={{ x: '-100px', opacity: 0 }}
@@ -96,7 +96,7 @@ const PortfolioIntroduction = () => {
 					</p>
 					<Link href='/portfolio' className='my-5 sm:my-10'>
 						<motion.button
-							className='flex flex-row items-center gap-3 border-black border-4 py-3  px-6 rounded-3xl bg-black  text-main-color uppercase'
+							className='flex flex-row items-center gap-3 border-black border-4 py-3  px-6 rounded-3xl bg-black  text-main-color uppercase shadow-btn'
 							onHoverStart={() => setIsHovered(true)}
 							onHoverEnd={() => setIsHovered(false)}
 							variants={buttonVariants}

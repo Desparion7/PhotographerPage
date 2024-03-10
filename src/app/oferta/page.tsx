@@ -5,7 +5,7 @@ import { FaPhoneAlt } from 'react-icons/fa';
 
 const Offert = () => {
 	return (
-		<section className='relative container mx-auto w-[100%] lg:py-10 sm:px-5'>
+		<section className='relative lg:container lg:mx-auto px-4 w-[100%] lg:py-10 sm:px-5'>
 			<motion.div
 				className='px-2 xl:mx-20'
 				initial={{ x: '-100px', opacity: 0 }}

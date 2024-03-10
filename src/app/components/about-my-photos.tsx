@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const AboutMyPhotos = () => {
 	return (
-		<section className='relative container mx-auto items-center w-[100%] py-5 xl:py-10 px-2 xl:px-5'>
+		<section className='relative lg:container lg:mx-auto items-center w-[100%] py-5 xl:py-10 px-4 xl:px-5'>
 			<div className='xl:mx-20'>
 				<motion.h2
 					className='custom:text-xl xl:text-3xl text-second-color uppercase font-semibold mb-3'

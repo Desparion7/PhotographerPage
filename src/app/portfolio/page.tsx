@@ -60,7 +60,7 @@ const Portfolio = () => {
 					</motion.p>
 				</div>
 			</section>
-			<section className='relative container mx-auto flex flex-col items-center w-[100%] lg:py-10 sm:px-5'>
+			<section className='relative lg:container lg:mx-auto flex flex-col items-center w-[100%] px-4 lg:py-10 sm:px-5'>
 				<motion.div
 					className='px-2 xl:mx-20'
 					initial={{ x: '-100px', opacity: 0 }}

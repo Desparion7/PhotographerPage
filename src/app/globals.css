@@ -23,3 +23,8 @@
 		margin: 0;
 	}
 }
+.shadow-btn {
+	-webkit-box-shadow: 8px 12px 12px -5px rgba(66, 68, 90, 1);
+	-moz-box-shadow: 8px 12px 12px -5px rgba(66, 68, 90, 1);
+	box-shadow: 8px 12px 12px -5px rgba(66, 68, 90, 1);
+}

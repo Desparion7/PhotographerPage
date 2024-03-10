@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const AboutMe = () => {
 	return (
-		<section className='relative container mx-auto w-[100%] py-10 px-2 xl:px-5'>
+		<section className='relative lg:container lg:mx-auto w-[100%] py-10 px-4 xl:px-5'>
 			<motion.div
 				className=' xl:mx-20 flex flex-col lg:flex-row justify-center items-center lg:justify-around'
 				initial={{ opacity: 0 }}
@@ -22,7 +22,7 @@ const AboutMe = () => {
 						className='w-[100%] rounded-lg'
 					/>
 				</div>
-				<div className='lg:w-[50%]  shadow-lg rounded-lg p-4'>
+				<div className='lg:w-[50%]  shadow-lg rounded-lg p-3'>
 					<h2 className='custom:text-xl xl:text-3xl text-second-color uppercase font-semibold mb-3'>
 						O Mnie
 					</h2>

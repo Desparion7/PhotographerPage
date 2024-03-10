@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 const ContactSection = () => {
 	return (
-		<section className='relative container mx-auto items-center w-[100%] py-5 xl:py-10 px-2  xl:px-5 text-black'>
+		<section className='relative lg:container lg:mx-auto items-center w-[100%] py-5 xl:py-10 px-4  xl:px-5 text-black'>
 			<motion.div
 				className='xl:mx-20'
 				initial={{ x: '-100px', opacity: 0 }}

@@ -20,9 +20,9 @@ const Footer = () => {
 				/>
 			</div>
 			<div className='relative container mx-auto w-[100%] flex flex-col sm:flex-row justify-around gap-2 sm:gap-5 py-5 px-2 xl:px-5'>
-				<div className='relative w-[6rem]'>
+				<div className='relative w-[15rem]'>
 					<Image
-						src='/logo.PNG'
+						src='/logo.png'
 						alt='logo'
 						width={239}
 						height={251}
@@ -52,7 +52,7 @@ const Footer = () => {
 					</div>
 				</div>
 			</div>
-			<p className='pb-2'>
+			<p className='pb-2 text-center'>
 				Strona wykonana przez firmę Modezp{' '}
 				<a
 					href='https://www.modezp.com/'

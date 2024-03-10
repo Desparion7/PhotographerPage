@@ -17,7 +17,7 @@ const config: Config = {
 				'second-color': 'var(--second-color)',
 			},
 			screens: {
-				custom: '315px',
+				custom: '321px',
 			},
 		},
 	},

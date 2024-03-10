@@ -6,6 +6,7 @@ import { FormData } from '@/lib/contact-form';
 import { sendFormData } from '@/lib/contact-form';
 import { FaArrowRight } from 'react-icons/fa6';
 import Image from 'next/image';
+import { toast } from 'react-hot-toast';
 
 const ContactForm = () => {
 	const [isHovered, setIsHovered] = useState(false);
@@ -13,15 +14,15 @@ const ContactForm = () => {
 
 	const onSubmit: SubmitHandler<FormData> = async (data) => {
 		const url =
-			'https://modezp.com/wp/wp-json/contact-form-7/v1/contact-forms/27/feedback';
+			'https://www.adrianpruchnik.pl/wp/wp-json/contact-form-7/v1/contact-forms/6/feedback';
 		try {
 			const result = await sendFormData(data, url);
 			if (result) {
-				// toast.success('Wiadomość została wysłana');
+				toast.success('Wiadomość została wysłana');
 			}
 			reset();
 		} catch (error) {
-			// toast.error('Coś poszło nie tak');
+			toast.error('Coś poszło nie tak');
 		}
 	};
 
@@ -54,10 +55,10 @@ const ContactForm = () => {
 					className='object-cover z-[-3] '
 				/>
 			</div>
-			<div className='relative container mx-auto items-center w-[100%] py-5 xl:py-10 px-2 xl:px-5 flex'>
+			<div className='relative lg:container lg:mx-auto items-center w-[100%] py-5 xl:py-10 px-4 xl:px-5 flex'>
 				<form
 					onSubmit={handleSubmit(onSubmit)}
-					className='flex flex-col justify-around gap-1 text-sm sm:text-md 2xl:w-[50%] xl:mx-20 container'
+					className='flex flex-col justify-around gap-1 text-sm sm:text-md 2xl:w-[50%] xl:mx-20 lg:container'
 				>
 					<h2 className=' text-xl mb-3'>Napisz wiadomość</h2>
 					<Controller
@@ -71,6 +72,7 @@ const ContactForm = () => {
 								type='text'
 								className='p-2 outline-none focus:border-second-color border-black border-2 bg-white  placeholder:text-gray-500 xl:text-lg text-black'
 								placeholder='Imię i nazwisko'
+								required
 							/>
 						)}
 					/>
@@ -84,6 +86,7 @@ const ContactForm = () => {
 								type='email'
 								className='p-2 outline-none focus:border-second-color border-black border-2 bg-white  placeholder:text-gray-500 xl:text-lg text-black'
 								placeholder='Twój e-mail'
+								required
 							/>
 						)}
 					/>
@@ -97,6 +100,7 @@ const ContactForm = () => {
 								type='number'
 								className='p-2 outline-none focus:border-second-color border-black border-2 bg-white  placeholder:text-gray-500 xl:text-lg text-black'
 								placeholder='Twój numer telefonu'
+								required
 							/>
 						)}
 					/>
@@ -112,6 +116,7 @@ const ContactForm = () => {
 								cols={30}
 								rows={5}
 								style={{ resize: 'none' }}
+								required
 							/>
 						)}
 					/>

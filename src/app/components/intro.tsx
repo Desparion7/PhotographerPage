@@ -1,4 +1,4 @@
-'use client';
+ 'use client';
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
@@ -8,7 +8,7 @@ const Intro = ({}) => {
 		<section className='relative bg-black  flex justify-center items-center w-[100%] h-[91vh] bg-opacity-40'>
 			<div className=''>
 				<Image
-					src='/main_page_photos/main-page.jpg'
+					src='/main_page_photos/main-page.webp'
 					alt='Uroczystości i eventy fotografowane przez Adriana Pruchnika'
 					sizes='100vw'
 					fill
@@ -16,7 +16,7 @@ const Intro = ({}) => {
 					className='hidden custom:inline object-cover z-[-3] '
 				/>
 				<Image
-					src='/main_page_photos/main-page-mobile.jpg'
+					src='/main_page_photos/main-page-mobile.webp'
 					alt='Uroczystości i eventy fotografowane przez Adriana Pruchnika'
 					sizes='100vw'
 					fill
