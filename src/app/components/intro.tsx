@@ -1,19 +1,19 @@
- 'use client';
+'use client';
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const Intro = ({}) => {
 	return (
-		<section className='relative bg-black  flex justify-center items-center w-[100%] h-[91vh] bg-opacity-40'>
-			<div className=''>
+		<section className='relative bg-black  flex justify-center items-center w-[100%] h-[88vh] sm:h-[90vh] bg-opacity-40 mb-20'>
+			<div>
 				<Image
 					src='/main_page_photos/main-page.webp'
 					alt='Uroczystości i eventy fotografowane przez Adriana Pruchnika'
 					sizes='100vw'
 					fill
 					priority
-					className='hidden custom:inline object-cover z-[-3] '
+					className='hidden custom:inline h-[90vh] object-cover z-[-3] '
 				/>
 				<Image
 					src='/main_page_photos/main-page-mobile.webp'
@@ -21,7 +21,7 @@ const Intro = ({}) => {
 					sizes='100vw'
 					fill
 					priority
-					className='custom:hidden object-cover z-[-3] '
+					className='custom:hidden h-[88vh] object-cover z-[-3] '
 				/>
 			</div>
 			<div className='relative flex flex-col justify-center md:items-center h-[100vh] w-[100%]'>

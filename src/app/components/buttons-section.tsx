@@ -31,7 +31,7 @@ const ButtonsSection = () => {
 				<motion.div
 					className='flex flex-col justify-center items-center'
 					initial={{ opacity: 0, translateX: '-200px' }}
-					whileInView={{ opacity: 1, translateX: '0' }}
+					whileInView={{ opacity: 1, translateX: 0 }}
 					transition={{ ease: 'easeOut', duration: 1 }}
 					viewport={{
 						once: true,
@@ -79,23 +79,25 @@ const ButtonsSection = () => {
 						</Link>
 					</div>
 				</motion.div>
-				<motion.div
-					className='relative lg:w-[40%] xl:mb-5 flex  justify-center rounded-lg'
-					initial={{ opacity: 0, translateX: '200px' }}
-					whileInView={{ opacity: 1, translateX: '0' }}
-					transition={{ ease: 'easeOut', duration: 1 }}
-					viewport={{
-						once: true,
-					}}
-				>
-					<Image
-						src='/camera.png'
-						width={500}
-						height={500}
-						alt='aparat fotograficzny'
-						className='xl:absolute w-[18rem] top-[-4rem]'
-					/>
-				</motion.div>
+				<div className='lg:w-[40%]'>
+					<div
+						className='xl:relative  xl:mb-5 flex justify-center rounded-lg'
+						// initial={{ opacity: 0, translateX: 200 }}
+						// whileInView={{ opacity: 1, translateX: 0 }}
+						// transition={{ ease: 'easeOut', duration: 1 }}
+						// viewport={{
+						// 	once: true,
+						// }}
+					>
+						<Image
+							src='/camera.png'
+							width={600}
+							height={766}
+							alt='aparat fotograficzny'
+							className='w-[18rem] '
+						/>
+					</div>
+				</div>
 			</div>
 		</section>
 	);

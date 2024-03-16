@@ -1,23 +1,16 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 
 const AboutMe = () => {
 	return (
 		<section className='relative lg:container lg:mx-auto w-[100%] py-10 px-4 xl:px-5'>
-			<motion.div
-				className=' xl:mx-20 flex flex-col lg:flex-row justify-center items-center lg:justify-around'
-				initial={{ opacity: 0 }}
-				transition={{ duration: 1 }}
-				whileInView={{ x: 0, opacity: 1 }}
-				viewport={{ once: true }}
-			>
+			<div className=' xl:mx-20 flex flex-col lg:flex-row justify-center items-center lg:justify-around'>
 				<div className='relative lg:w-[40%] mb-5 flex  justify-center rounded-lg'>
 					<Image
 						src='/Adrian Pruchnik Fotograf.jpg'
-						width={500}
-						height={500}
+						width={1200}
+						height={801}
 						alt='Zdjęcie Adriana Pruchnika Fotografa'
 						className='w-[100%] rounded-lg'
 					/>
@@ -42,7 +35,7 @@ const AboutMe = () => {
 						obrębem. Na pewno się dogadamy.
 					</p>
 				</div>
-			</motion.div>
+			</div>
 		</section>
 	);
 };
